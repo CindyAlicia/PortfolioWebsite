@@ -1,0 +1,401 @@
+/* Basis */
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary: #CE2327;
+    --secondary: #1C292F;
+    --tertiary: #75262B;
+}
+
+h1 {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: var(--primary);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+h3 {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--tertiary);
+}
+
+h4 {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+}
+
+p {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+figcaption {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+}
+
+.dark {
+    color: #FFFFFF;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+}
+
+a {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+#selected {
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+img {
+    object-fit: cover;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 5% 0 5% 0;
+}
+
+button {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #1C292F;
+    height: 40px;
+    width: 200px;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    border: 2px solid var(--primary);
+}
+
+button:hover {
+    background-color: var(--primary);
+    color: #FFFFFF;
+}
+
+button:active {
+    background-color: var(--tertiary);
+    color:#FFFFFF;
+}
+
+button:disabled {
+    background-color: #808080;
+    color: #3B3A3A;
+}
+
+/* Header en Nav */
+header {
+    grid-area: header;
+    margin: 0;
+}
+
+#home-header {
+    height: 100vh;
+    background-image: url("images/RecordHome.jpg");
+    background-position-y: bottom;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+nav {
+    background-color: var(--secondary);
+    width: -webkit-fill-available;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    z-index: 1;
+    box-shadow: 0 3px 6px #00000029;
+    opacity: 99%;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.links a {
+    padding: 0 0 0 50px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    overflow: visible;
+    margin: 10em;
+}
+
+.text-intro {
+    margin: auto 0;
+}
+
+.text-intro h1, .text-intro h2{
+    text-align: unset;
+}
+
+.card-intro {
+    background-color: #FFFFFF;
+    border-radius: 5%;
+}
+
+#selfie-home {
+    border-radius: 5% 5% 0 0;
+}
+
+.container-intro {
+    display: flex;
+    margin: 4% 25%;
+    justify-content: space-around;
+}
+
+.bi-instagram, .bi-spotify {
+    background-color: var(--secondary);
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 10%;
+}
+
+.bi-instagram:hover, .bi-spotify:hover {
+    background-color: var(--primary);
+}
+
+.bi-linkedin:hover {
+    fill: var(--primary);
+    background-color: #FFFFFF;
+}
+
+.bi-instagram:active, .bi-spotify:active {
+    background-color: var(--tertiary);
+}
+
+.bi-linkedin:active {
+    fill: var(--tertiary);
+    background-color: #FFFFFF;
+}
+
+#header-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-arrow p {
+    text-align: center;
+}
+
+/* main home */
+main {
+    grid-area: main;
+}
+
+section {
+    padding: 80px 100px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#aboutme-text {
+    width: 50%;
+}
+
+#aboutme-text p {
+    padding: 20px 0;
+}
+
+.about-me img {
+    width: 450px;
+    height: 450px;
+}
+
+.top-skills {
+    background-color: var(--secondary);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    box-shadow: none;
+    object-fit: contain;
+    height: 150px;
+    width: 150px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-work .flex-row img {
+    height: 300px;
+    width: 300px;
+}
+
+.my-work h3 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contact {
+    background-color: var(--secondary);
+}
+
+.contact p {
+    margin: 40px 25%;
+}
+
+/* Mijn werk */
+.work-intro {
+    background-color: var(--secondary);
+}
+
+.work-intro h1 {
+    margin: 100px 0 50px 0;
+}
+
+.work-intro p {
+    margin: 40px 10%;
+}
+
+.work-container {
+    overflow: hidden;
+}
+
+#buttons-filter {
+    text-align: center;
+}
+
+.btn {
+    margin: 0 20px 50px 20px;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+  
+.filterDiv {
+    text-align: center;
+    display: none; /* Hidden by default */
+    height: auto;
+    width: 400px;
+    margin: 10px;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.filterDiv img {
+    height: 400px;
+    width: 400px;
+    border-radius: 5% 5% 0 0;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.show {
+    display: block;
+}
+
+.btn.active {
+    background-color: var(--tertiary);
+    color: #FFFFFF;
+    border: var(--tertiary);
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 80px 100px;
+    border-top: 1px solid var(--secondary);
+}
+
+footer button {
+    margin: auto 0;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-icons {
+    margin: auto;
+}
+
+#footer-icons svg {
+    margin: 0 5px;
+}
+
+#copyright {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+
+#copyright svg {
+    margin: auto;
+}
